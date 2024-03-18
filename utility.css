@@ -1,0 +1,51 @@
+@font-face {
+    font-family: "Sports Heading";
+    src: url(fonts/azn-unified.oblique.otf);
+}
+
+@font-face {
+    font-family: "Sports Body";
+    src: url(fonts/forgotten-futurist.rg-regular.otf);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.sm-gap {
+    padding: 1em;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.sm-padding {
+    padding: 1em;
+}
+
+.heading {
+    font-family: "Sports Heading";
+}
+
+.lg-text {
+    font-size: 3em;
+}
+
+.text-vcenter {
+    vertical-align: center;
+}

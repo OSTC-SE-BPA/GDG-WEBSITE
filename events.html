@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="Events.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
+        <script src="hamburger.js"></script>
 
         <title>Game Day Grill: Burgers & More</title>
         <meta name="title" content="Game Day Grill: Burgers & More" />
@@ -21,31 +22,38 @@
         <!-- <meta property="og:url" content="https://metatags.io/" /> -->
         <meta property="og:title" content="Game Day Grill: Burgers & More" />
         <meta property="og:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
-        <!-- <meta property="og:image" content="https://metatags.io/images/meta-tags.png" /> -->
+        <!-- <meta property="og:image" content="https://metatags.io/images/meta-tags.webp" /> -->
         
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
         <!-- <meta property="twitter:url" content="https://metatags.io/" /> -->
         <meta property="twitter:title" content="Game Day Grill: Burgers & More" />
         <meta property="twitter:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
-        <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" /> -->
+        <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.webp" /> -->
     </head>
 
     <body>
         <header>
-            <div class="grow">
-                <a id="logoB" href="index.html">
-                    <img src = "imgs/logos/game-day-grill-logo-simple2.png" class = "logo">
-                </a>
-                <p class="header-text">Game Day Grill</h1>
-            </div>
-            <div class="spaced-row">
-                <a href="order.html" class="button sm" >Order Now</a>
-                <a href="menu.html" class="button sm">Menu</a>
-                <a href="locations.html" class="button sm">Locations</a>
-                <a href="events.html" class="button sm">Special Events</a>
-            </div>
-        </header>
+			<div class="grow">
+				<a id="logoB" href="index.html">
+					<img src = "imgs\logos\game-day-grill.ico" alt = "Game Day Grill Logo" class = "logo">
+				</a>
+				<p class="header-text">Game Day Grill</h1>
+			</div>
+			<div class="navbar-buttons spaced-row">
+				<a href="order.html" class="button sm" >Order Now</a>
+				<a href="menu.html" class="button sm">Menu</a>
+				<a href="locations.html" class="button sm">Locations</a>
+				<a href="events.html" class="button sm">Special Events</a>
+			</div>
+			<img id="hamburger-button" src="imgs/hamburger.webp">
+    	</header>
+		<div id="hamburger-menu">
+			<a href="order.html" class="navbar-button sm" >Order Now</a>
+			<a href="menu.html" class="navbar-button sm">Menu</a>
+			<a href="locations.html" class="navbar-button sm">Locations</a>
+			<a href="events.html" class="navbar-button sm">Special Events</a>
+		</div>
         <main>
 
         <h2>EVENTS</h2>
@@ -163,7 +171,7 @@
         </main>
 
         <footer class = "footer-grid">
-            <!-- <img src = "imgs/game-day-grill-logo-simple2.png" class = "footer-logo"> -->
+            <!-- <img src = "imgs/game-day-grill-logo-simple2.webp" class = "footer-logo"> -->
             <div class = "centered-title">
             <h1>GAME DAY GRILL</h1>
 

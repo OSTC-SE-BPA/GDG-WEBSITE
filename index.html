@@ -3,12 +3,15 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+        
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="Home.css" rel="stylesheet">
+        <link href="home.css" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <script src="script.js"></script>
+        <script src="hamburger.js"></script>
+
+
 
         <title>Game Day Grill: Burgers & More</title>
         <meta name="title" content="Game Day Grill: Burgers & More" />
@@ -16,37 +19,46 @@
 
          <!-- logo icon -->
          <link rel="icon" href="imgs/logos/game-day-grill.ico" type="image/x-icon"/>
+
+         <link rel="stylesheet" href="utility.css">
+         <link rel="stylesheet" href="individual.css">
         
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
         <!-- <meta property="og:url" content="https://metatags.io/" /> -->
         <meta property="og:title" content="Game Day Grill: Burgers & More" />
         <meta property="og:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
-        <!-- <meta property="og:image" content="https://metatags.io/images/meta-tags.png" /> -->
+        <!-- <meta property="og:image" content="https://metatags.io/images/meta-tags.webp" /> -->
         
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
         <!-- <meta property="twitter:url" content="https://metatags.io/" /> -->
         <meta property="twitter:title" content="Game Day Grill: Burgers & More" />
         <meta property="twitter:description" content="Order online, view our menu, and learn more about Game Day Grill through our website!" />
-        <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" /> -->
+        <!-- <meta property="twitter:image" content="https://metatags.io/images/meta-tags.webp" /> -->
     </head>
 
     <body>
-        <header>
-            <div class="grow">
-                <a id="logoB" href="index.html">
-                    <img src = "imgs/logos/game-day-grill-logo-simple2.png" class = "logo">
-                </a>
-                <p class="header-text">Game Day Grill</h1>
-            </div>
-            <div class="spaced-row">
-                <a href="order.html" class="button sm" >Order Now</a>
-                <a href="menu.html" class="button sm">Menu</a>
-                <a href="locations.html" class="button sm">Locations</a>
-                <a href="events.html" class="button sm">Special Events</a>
-            </div>
-        </header>
+        <header id="header" class="full-width sm-padding row">
+            <a class="full-height" href="index.html">
+                <img src="imgs\logos\game-day-grill.ico" class="full-height" alt="Game Day Grill Logo">
+            </a>
+            <p class="heading lg-text grow text-vcenter">Game Day Grill</h1>
+			<div class="navbar-buttons spaced-row">
+				<a href="order.html" class="button sm">Order Now</a>
+				<a href="menu.html" class="button sm">Menu</a>
+				<a href="locations.html" class="button sm">Locations</a>
+				<a href="events.html" class="button sm">Special Events</a>
+			</div>
+			<img id="hamburger-button" src="imgs/hamburger.webp">
+    	</header>
+		<div id="hamburger-menu">
+			<a href="order.html" class="navbar-button sm" >Order Now</a>
+			<a href="menu.html" class="navbar-button sm">Menu</a>
+			<a href="locations.html" class="navbar-button sm">Locations</a>
+			<a href="events.html" class="navbar-button sm">Special Events</a>
+		</div>
+          
         <main>
             <div class="presented">
                 <div class="left-half-center">
@@ -61,52 +73,117 @@
                 </div>
             </div>
 
-            <div class="Cards">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- <div class="Cards">
                 <a href="order.html" class="card" id="C1"><p>Order Now</p></a> 
                 <a href="menu.html" class="card" id="C2"><p>Menu</p></a> 
                 <a href="locations.html" class="card" id="C3"><p>Locations</p></a> 
                 <a href="events.html" class="card" id="C4"><p>Special Events</p></a> 
-            </div>
+            </div> -->
 
-            <div class = "main-grid">
-                <div class = "main-grid-inner">
-                    
-                    <div class = "main-grid-inner-text">
-                        <h1>HOURS</h1>
-                        <hr>
-                        <p>From noon till midnight, our doors are open, ready to serve you and your party!
-                            Join us during these hours for a sensational sports-filled experience 
-                            at Game Day Grill, where the action on the field meets the sizzle on our grills.</p>
-                        <h2>HOURS OF OPERATION</h2>
-                        <ul>
-                            <li>Mon - Fri: 12:00PM - 12:00AM</li>
-                            <li>Sat-Sun: 12:00PM - 12:00AM</li>
-                        </ul>
+            <div class="wrapper-container">
+              <div class="wrapper">
+                <div class="infocard full-width-infocard">
+                  <span class="card-header">HOURS</span>
+                  
+                  <div class="column-spacer"></div>
+
+                  <span>From noon till midnight, our doors are open, ready to serve you and your party!
+                    Join us during these hours for a sensational sports-filled experience 
+                    at Game Day Grill, where the action on the field meets the sizzle on our grills.</span>
+
+                    <div class="column-spacer"></div>
+
+                  <div class="infocard-row centered-row">
+                    <div class="content-columns">
+                      <span class="md-text">HOURS OF OPERATION:</span>
+                      <span>Mon - Fri: 12:00PM - 12:00AM</span>
+                      <span>Sat-Sun: 12:00PM - 12:00AM</span>
                     </div>
-                    <div class = "main-grid-inner-image">
-                        <img src = "imgs/reservations/reservation2.webp" alt = "reservation room">
+  
+                    <div class="content-columns">
+                      <span class="md-text">HOLIDAY HOURS:</span>
+                      <span>NEW YEARS DAY: CLOSED</span>
+                      <span>EASTER: CLOSED</span>
+                      <span>INDEPENDENCE DAY: 12PM - 12AM</span>
+                      <span>LABOR DAY: 12PM - 12AM</span>
+                      <span>THANKSGIVING: CLOSED</span>
+                      <span>CHRISTMAS EVE: 12PM - 5PM</span>
+                      <span>CHRISTMAS DAY: CLOSED</span>
+                      <span>NEW YEARS EVE: 12PM - 2AM</span>
                     </div>
+                  </div>
                 </div>
-                <div class = "main-grid-inner">
+
+                <span class="card-header centered-text">Reviews</span>
+
+                <div class="new-review-row">
+                  <div class="infocard">
+                    <span class="md-text centered-text">GREAT ICE CREAM</span>
+                    <span class = "stars">&bigstar; &bigstar; &bigstar; &bigstar; &bigstar;</span>
+                    <span>Joe B.</span>
+                    <span>I love the variety of ice cream flavors. I reccomend the mint chocolate chip flavor.</span>
+                  </div>
+                  <div class="infocard">
+                    <span class="md-text centered-text">MY FAVORITE SPORTS GRILL</span>
+                    <span class = "stars">&bigstar; &bigstar; &bigstar; &bigstar; &bigstar;</span>
+                    <span>Jedidiah S.</span>
+                    <span>The staff are very friendly and the atmosphere is great. Not to mention the amazing food!</span>
+                  </div>
+                  <div class="infocard">
+                    <span class="md-text centered-text">BEST HANGOUT SPOT</span>
+                    <span class = "stars">&bigstar; &bigstar; &bigstar; &bigstar; &bigstar;</span>
+                    <span>Michael P.</span>
+                    <span>I love to come here with my friends. It's a great place to watch football together! They have great appetizers too.</span>
+                  </div>
+                </div>
+
+                <div class = "main-grid">
+                  <div class = "main-grid-inner">
                     <div class = "main-grid-inner-image">
-                        <!--left column: image-->
-                        <img src = "imgs/reservations\reservation.webp" alt = "reservation room">
+                      <!--left column: image-->
+                      <img src = "imgs/reservations\reservation.webp" alt = "reservation room">
                     </div>  
                     <div class = "main-grid-inner-text"> 
-                    <!--right column: text-->
-                    <h1>RESERVATIONS</h1>
-                    <hr>
-                    <p> 
-                        Secure your spot for an epic sports experience by making reservations.
-                        Reserve your table in advance to ensure a prime seat for the game day action. 
-                        Enjoy the thrilling atmosphere while indulging in delicious bites and drinks, 
-                        all with the convenience of your pre-booked reservation. 
-                        Elevate your game day excitement by securing your place at Game Day Grill!</p>
-                        <a href = "reservations.html" class = "button">MAKE A RESERVATION</a>
+                      <!--right column: text-->
+                      <h1>RESERVATIONS</h1>
+                      <hr>
+                      <p> 
+                          Secure your spot for an epic sports experience by making reservations.
+                          Reserve your table in advance to ensure a prime seat for the game day action. 
+                          Enjoy the thrilling atmosphere while indulging in delicious bites and drinks, 
+                          all with the convenience of your pre-booked reservation. 
+                          Elevate your game day excitement by securing your place at Game Day Grill!</p>
+                          <a href = "reservations.html" class = "button">MAKE A RESERVATION</a>
                     </div>  
-                </div>
-                <div class = "main-grid-inner">
-                    
+                  </div>
+                  <div class = "main-grid-inner res">
                     <div class = "main-grid-inner-text"> 
                     <!--Left column: text-->
                     <h1>SPORTS</h1>
@@ -116,31 +193,29 @@
                         fellow fans. With top-notch visuals and a lively atmosphere, it's the
                         perfect place to celebrate victories. Join us for an unforgettable sports experience!</p>
                         <a href = "Sports.html" class = "button">SPORTS CALENDARS</a>
-                        
                     </div>
                     <div class = "main-grid-inner-image">
-                        <!--Right column: image-->
-                        <img src = "imgs/events/sports-tv.webp" alt = "sports on tv" >
+                      <!--Right column: image-->
+                      <img src = "imgs/events/sports-tv.webp" alt = "sports on tv" >
                     </div>    
-                </div>
-
-                <div class = "main-grid-inner">
+                  </div>
+    
+                  <div class = "main-grid-inner">
                     <div class = "main-grid-inner-image">
                         <img src = "imgs/events/wings.webp" alt = "chicken wings">
                     </div>
                     <div class = "main-grid-inner-text">
-                        <h1>WING EATING CONTEST</h1>
-                        <hr>
-                        <p> Every Sunday, challengers are invited to take part in the famed 50-wing
-                            challenge.You’ll have 1 hour to eat 50 of the Game Day Grills delectable BBQ
-                            wings in the hopes of earning a plaque to put on the Wall of Fame.If you’re able to
-                            finish the challenge, you’ll receive a t-shirt, $15 gift certificate and
-                            bragging rights as the wing champion.</p>
+                      <h1>WING EATING CONTEST</h1>
+                      <hr>
+                      <p> Every Sunday, challengers are invited to take part in the famed 50-wing
+                          challenge.You'll have 1 hour to eat 50 of the Game Day Grills delectable BBQ
+                          wings in the hopes of earning a plaque to put on the Wall of Fame.If you're able to
+                          finish the challenge, you'll receive a t-shirt, $15 gift certificate and
+                          bragging rights as the wing champion.</p>
                     </div>
-                </div>
-
-                <div class = "main-grid-inner">
-                    
+                  </div>
+    
+                  <div class = "main-grid-inner res">                      
                     <div class = "main-grid-inner-text"> 
                     <!--Left column: text-->
                     <h1>OPEN MIC NIGHT</h1>
@@ -156,29 +231,16 @@
                         <!--Right column: image-->
                         <img src = "imgs/events/karaoke.webp" alt = "people on stage" class = "sports-tv">
                     </div>    
+                  </div>
                 </div>
+            
+              </div>
             </div>
 
-            <!-- <div class="EButton"><a href="events.html">More Events</a></div>
-
-            <div class="ReviewCon">
-
-                <div class="Review" id="R1"><p>Great food. Nice staff. Cheap drinks :)<br> -Sean Obrien</p></div>
-
-                <div class="Review" id="R2"><p>Total classic MI working class bar, they have a grill with a very good bar burger as well. Pool table they have, dart board would be sweet to have.<br> -Eric Strebel (Local Guide)</p></div>
-
-                <div class="Review" id="R3"><p>Excellent Place!  Great Food so dang good!! I recommend that you go try it out!  The owner is one of the best guy I met especially as a new bee!  Go enjoy this great place!<br> -Jake Black</p></div>
-
-            </div>  -->
-
-
-
-
-            <!-- <div style="height: 100vh"></div> -->
-        </main>
+          </main>
 
         <footer class = "footer-grid">
-            <!-- <img src = "imgs/game-day-grill-logo-simple2.png" class = "footer-logo"> -->
+            <!-- <img src = "imgs/game-day-grill-logo-simple2.webp" class = "footer-logo"> -->
             <div class = "centered-title">
             <h1>GAME DAY GRILL</h1>
 
@@ -209,7 +271,7 @@
                 target="_blank" class = "contact">5055 Delemere Ave, Royal Oak, MI 48073</a></strong>
 
             </div>
-            <div class = "centered-title">
+            <div class = "centered-title Cinfo">
                 <h1 class = "contact">CHAPTER INFORMATION: </h1>
                 <p class = "contact">Team Members: Sarah Phillips, Isaac Hatfield, Owen Murray, Tatyana Anissimov <br>
                 Theme: Sieze the Opportunity<br>

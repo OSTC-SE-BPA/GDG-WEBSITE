@@ -1,3 +1,8 @@
+body 
+{
+    background-color: #121215;
+}
+
 span, p, a {
     color: #f8f9fa;
 
@@ -29,6 +34,7 @@ span, p, a {
     align-items: flex-start;
 
     gap: 1em;
+    
 }
   
 * {
@@ -122,3 +128,9 @@ span.price {
 /* .container .button {
     align-items: flex-start;
 } */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .container {
+        margin: 2em 2em;
+    }
+}
