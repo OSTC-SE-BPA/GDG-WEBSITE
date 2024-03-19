@@ -6,8 +6,8 @@
         
 
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="home.css" rel="stylesheet">
-        <link href="style.css" rel="stylesheet">
+        <!-- <link href="home.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet"> -->
         <script src="script.js"></script>
         <script src="hamburger.js"></script>
 
@@ -20,8 +20,8 @@
          <!-- logo icon -->
          <link rel="icon" href="imgs/logos/game-day-grill.ico" type="image/x-icon"/>
 
-         <link rel="stylesheet" href="utility.css">
-         <link rel="stylesheet" href="individual.css">
+         <link rel="stylesheet" href="stylesheet.css">
+         <!-- <link rel="stylesheet" href="individual.css"> -->
         
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website" />
@@ -39,31 +39,31 @@
     </head>
 
     <body>
-        <header id="header" class="full-width sm-padding row">
+        <header class="full-width sm-padding row sm-gap fixed border-sizing">
             <a class="full-height" href="index.html">
-                <img src="imgs\logos\game-day-grill.ico" class="full-height" alt="Game Day Grill Logo">
+                <img src="imgs\logos\game-day-grill-logo-cropped.png" class="full-height" alt="Game Day Grill Logo">
             </a>
-            <p class="heading lg-text grow text-vcenter">Game Day Grill</h1>
-			<div class="navbar-buttons spaced-row">
-				<a href="order.html" class="button sm">Order Now</a>
-				<a href="menu.html" class="button sm">Menu</a>
-				<a href="locations.html" class="button sm">Locations</a>
-				<a href="events.html" class="button sm">Special Events</a>
-			</div>
+            <p class="heading lg-text grow">Game Day Grill</h1>
+            <div class="row sm-gap">
+                <a href="order.html" class="button">Order Now</a>
+                <a href="menu.html" class="button">Menu</a>
+                <a href="locations.html" class="button">Locations</a>
+                <a href="events.html" class="button">Special Events</a>
+            </div>
 			<img id="hamburger-button" src="imgs/hamburger.webp">
+            <div id="hamburger-menu">
+                <a href="order.html" class="button">Order Now</a>
+                <a href="menu.html" class="navbar-button sm">Menu</a>
+                <a href="locations.html" class="navbar-button sm">Locations</a>
+                <a href="events.html" class="navbar-button sm">Special Events</a>
+            </div>
     	</header>
-		<div id="hamburger-menu">
-			<a href="order.html" class="navbar-button sm" >Order Now</a>
-			<a href="menu.html" class="navbar-button sm">Menu</a>
-			<a href="locations.html" class="navbar-button sm">Locations</a>
-			<a href="events.html" class="navbar-button sm">Special Events</a>
-		</div>
           
-        <main>
-            <div class="presented">
+        <main id="main">
+            <div id="presented">
                 <div class="left-half-center">
                     <div class="presented-text">
-                        <p class="lg">Great Food Great Drinks</p>
+                        <p class="lg">Great Food. Great Drinks.</p>
                         <p class="sm">See what makes us special. Visit our restaurants or order online today!</p>
                         <div class="spaced-row margin-top">
                             <a href="order.html" class="button sm">Order Now</a>
