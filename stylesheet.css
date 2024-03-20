@@ -9,9 +9,11 @@
 }
 
 :root {
-    --background-primary: #222;
-    --background-secondary: #555;
-    --content: #fff;
+    --background-primary: #212529;
+    --background-secondary: #343a40;
+    --content: #f1f3f5;
+    --accent: #f03e3e;
+    --accent-secondary: #f76707;
     --transition: 0.35s;
 }
 
@@ -33,7 +35,27 @@ header {
 
     height: 6em;
 
-    background-color: var(--background-secondary);
+    z-index: 5;
+
+    box-shadow: 0 0 1em var(--background-primary);
+}
+
+#greeting {
+    margin-top: 6em;
+
+    height: 40em;
+
+    background-image: url("imgs/main/bacon-burger.webp");
+    /* background-size: contain; */
+    background-size: cover;
+    /* background-position: 100% 80%; */
+    background-position: 100% 80%;
+    background-repeat: no-repeat;
+    background-color: #1f1f27;
+}
+
+#greeting-text {
+    max-width: 30em;
 }
 
 #hamburger-button, #hamburger-menu {
@@ -42,6 +64,20 @@ header {
 
 .full-width {
     width: 100%;
+}
+
+.hw-container {
+    width: 50%;
+    max-width: 50%;
+}
+
+.tw-container {
+    width: 33%;
+    max-width: 33%;
+}
+
+.mc-container {
+    width: 70%;
 }
 
 .full-height {
@@ -53,16 +89,57 @@ header {
     flex-direction: row;
 }
 
-.skew-x {
-    transform: skewX(-20deg);
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* flex no assume height */
+.flex-nah {
+    align-items: flex-start;
+}
+
+.g-s-padding {
+    padding: 0 0.5em;
 }
 
 .sm-gap {
     gap: 1em;
 }
 
+.md-gap {
+    gap: 2em;
+}
+
 .grow {
     flex-grow: 1;
+}
+
+.x-center {
+    display: flex;
+
+    justify-content: center;
+}
+
+.y-center {
+    display: flex;
+
+    align-items: center;
+}
+
+.xy-center {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.skew-x {
+    transform: skewX(-20deg);
 }
 
 .sm-padding {
@@ -73,11 +150,29 @@ header {
     font-family: "Sports Heading";
 }
 
-.lg-text {
-    font-size: 3em;
+.xl-text {
+    font-size: 4em;
+}
 
-    margin: 0;
-    padding: 0;
+.lg-text {
+    font-size: 3.75em;
+
+    /* margin: 0;
+    padding: 0; */
+}
+
+.md-text {
+    font-size: 2.5em;
+
+    vertical-align: middle;
+}
+
+.sm-text {
+    font-size: 1.25em;
+}
+
+.no-select {
+    user-select: none;
 }
 
 .fixed {
@@ -96,11 +191,30 @@ header {
     background-color: var(--background-secondary);
 }
 
+.content-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1em;
+}
+
+.card {
+    padding: 2em;
+
+    background-color: var(--background-secondary);
+
+    box-shadow: 0 0 2em var(--background-primary);
+}
+
+.card img {
+    height: 100%;
+}
+
 .button {
     padding: 0.75em;
 
-    color: #f8f9fa;
-    background-color: #c92a2a;
+    color: var(--content);
+    background-color: var(--accent);
 
     border-radius: 0.75em 0 0.75em 0;
 
