@@ -71,12 +71,22 @@ header {
     max-width: 50%;
 }
 
+.hw-expandable {
+    width: 49%;
+    max-width: 49%;
+}
+
 .tw-container {
     width: 33%;
     max-width: 33%;
 }
 
-.mc-container {
+.tw-expandable {
+    width: 32%;
+    max-width: 32%;
+}
+
+.mc-expandable {
     width: 70%;
 }
 
@@ -87,6 +97,15 @@ header {
 .row {
     display: flex;
     flex-direction: row;
+
+    flex-wrap: wrap;
+}
+
+.r-row {
+    display: flex;
+    flex-direction: row-reverse;
+
+    flex-wrap: wrap;
 }
 
 .column {
@@ -99,8 +118,8 @@ header {
     align-items: flex-start;
 }
 
-.g-s-padding {
-    padding: 0 0.5em;
+.flex-ns {
+    flex-shrink: 0;
 }
 
 .sm-gap {
@@ -109,6 +128,10 @@ header {
 
 .md-gap {
     gap: 2em;
+}
+
+.sm-gap-padding {
+    padding: 0 0.5em;
 }
 
 .grow {
@@ -144,6 +167,20 @@ header {
 
 .sm-padding {
     padding: 1em;
+}
+
+.md-padding {
+    padding: 2em;
+}
+
+.long-padding {
+    padding: 1.25em 2.5em;
+}
+
+.glass-box {
+    background-color: rgba(0, 0, 0, 0.7);
+
+    backdrop-filter: blur(0.5em);
 }
 
 .heading {
@@ -199,7 +236,7 @@ header {
 }
 
 .card {
-    padding: 2em;
+    padding: 1.25em;
 
     background-color: var(--background-secondary);
 
@@ -238,4 +275,23 @@ header {
 
     transform: scale(1.05) skewX(-20deg) translateX(-0.555em);
     transition: var(--transition);
+}
+
+@media only screen and (max-width: 70em) {
+    .hw-expandable, .tw-expandable {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .mc-expandable {
+        width: 90%;
+        max-width: 90%;
+    }
+
+    .lg-text {
+        font-size: 3.25em;
+    
+        /* margin: 0;
+        padding: 0; */
+    }
 }

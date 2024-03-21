@@ -39,7 +39,7 @@
     </head>
 
     <body>
-        <header class="full-width sm-padding row sm-gap fixed border-sizing bg-secondary flex-nah y-center">
+        <header class="full-width sm-padding row sm-gap fixed border-sizing flex-nah y-center bg-secondary">
             <a class="full-height" href="index.html">
                 <img src="imgs\logos\game-day-grill-logo-cropped.png" class="full-height" alt="Game Day Grill Logo">
             </a>
@@ -61,8 +61,8 @@
           
         <main id="main" class="y-center column full-width sm-gap">
             <div id="greeting" class="full-width">
-                <div class="hw-container full-height xy-center">
-                    <div id="greeting-text" class="content-container">
+                <div class="hw-expandable full-height xy-center">
+                    <div id="greeting-text" class="content-container long-padding glass-box">
                         <span class="lg-text heading">Great Food. Great Drinks.</span>
                         <span class="sm-text">See what makes our locations so popular. Visit our restaurants or order online today!</span>
                         <div class="row sm-gap">
@@ -73,12 +73,12 @@
                 </div>
             </div>
 
-			<div class="column sm-gap mc-container">
+			<div class="column sm-gap mc-expandable">
 				<span class="lg-text heading text-center">HOURS</span>
 
 				<div class="card row sm-gap">
-					<span class="sm-text hw-container">From noon till midnight, our doors are open, ready to serve you and your party! Join us here at GDG at our listed hours, where the action on the field meets the sizzle on our grills.</span>
-					<div class="content-container">
+					<span class="sm-text hw-expandable">From noon till midnight, our doors are open, ready to serve you and your party! Join us here at GDG at our listed hours, where the action on the field meets the sizzle on our grills.</span>
+					<div class="content-container hw-expandable">
 						<span class="md-text">HOURS OF OPERATION:</span>
 						<span class="sm-text">Mon - Fri: 12:00PM - 12:00AM</span>
 						<span class="sm-text">Sat-Sun: 12:00PM - 12:00AM</span>
@@ -96,26 +96,91 @@
 
 				<span class="lg-text heading text-center">REVIEWS</span>
 
-				<div class="row sm-gap">
-					<div class="card g-s-padding content-container tw-container border-sizing">
+				<div class="row sm-gap x-center">
+					<div class="card sm-gap-padding content-container tw-expandable border-sizing flex-ns">
 						<span class="md-text">GREAT ICE CREAM</span>
 						<span class="sm-text no-select">&bigstar; &bigstar; &bigstar; &bigstar; &bigstar;</span>
 						<span class="sm-text">Joe B.</span>
 						<span class="sm-text">The variety of ice cream flavors is just splended at GDG. I really like the mint chocolate chip flavor myself.</span>
 					</div>
 
-					<div class="card g-s-padding content-container tw-container border-sizing">
+					<div class="card sm-gap-padding content-container tw-expandable border-sizing flex-ns">
 						<span class="md-text">MY FAV SPORTS GRILL</span>
 						<span class="sm-text no-select">&bigstar; &bigstar; &bigstar; &bigstar; &bigstar;</span>
 						<span class="sm-text">Jedidiah S.</span>
 						<span class="sm-text">The staff at Game Day keep me coming back! Kathy was a great server and the food was awesome. Looking forward to coming back, I'll make a reservation through their website soon!</span>
 					</div>
 
-					<div class="card g-s-padding content-container tw-container border-sizing">
+					<div class="card sm-gap-padding content-container tw-expandable border-sizing flex-ns">
 						<span class="md-text">BEST HANGOUT SPOT</span>
 						<span class="sm-text no-select">&bigstar; &bigstar; &bigstar; &bigstar; &bigstar;</span>
 						<span class="sm-text">Michael P.</span>
 						<span class="sm-text">Favorite place to watch sports with my buddies, especially with the crazy good drinks and apps they serve. Thought I'd leave a review after constant great service.</span>
+					</div>
+				</div>
+
+				<span class="heading text-center lg-text">RESERVATIONS</span>
+
+				<div class="card row sm-gap x-center">
+					<img src = "imgs/reservations\reservation.webp" alt = "reservation room" class="hw-expandable">
+					<div class="content-container flex-nah y-center hw-expandable">
+						<span class="sm-text">
+							Secure your spot for an epic sports experience by making reservations.
+							Reserve your table in advance to ensure a prime seat for the game day action. 
+							Enjoy the thrilling atmosphere while indulging in delicious bites and drinks, 
+							all with the convenience of your pre-booked reservation. 
+							Elevate your game day excitement by securing your place at Game Day Grill!
+						</span>
+						<a href="reservations.html" class="button">MAKE A RESERVATION</a>
+					</div>
+				</div>
+
+				<span class="lg-text heading text-center">SPORTS</span>
+
+				<div class="card r-row sm-gap  x-center">
+					<img src = "imgs/events/sports-tv.webp" alt = "reservation room" class="hw-expandable">
+					<div class="content-container flex-nah y-center hw-expandable">
+						<span class="sm-text">
+							Experience the ultimate game day at our Viewing Party! Cheer for
+							your team, enjoy bites and drinks, and share the excitement with
+							fellow fans. With top-notch visuals and a lively atmosphere, it's the
+							perfect place to celebrate victories. Join us for an unforgettable sports experience!
+						</span>
+						<a href="reservations.html" class="button">SPORTS CALENDARS</a>
+						<a href="reservations.html" class="button">MAKE A RESERVATION</a>
+					</div>
+				</div>
+
+				<span class="lg-text heading text-center">WING EATING CONTEST</span>
+
+				<div class="card row sm-gap  x-center">
+					<img src = "imgs/events/wings.webp" alt = "reservation room" class="hw-expandable">
+					<div class="content-container flex-nah y-center hw-expandable">
+						<span class="sm-text">
+							Every Sunday, challengers are invited to take part in the famed 50-wing
+							challenge. You'll have 1 hour to eat 50 of the Game Day Grills delectable BBQ
+							wings in the hopes of earning a plaque to put on the Wall of Fame. If you're able to
+							finish the challenge, you'll receive a t-shirt, $15 gift certificate and
+							bragging rights as the wing champion.
+						</span>
+						<a href="reservations.html" class="button">MAKE A RESERVATION</a>
+					</div>
+				</div>
+
+				<span class="lg-text heading text-center">OPEN MIC NIGHT</span>
+
+				<div class="card r-row sm-gap x-center">
+					<img src = "imgs/events/karaoke.webp" alt = "reservation room" class="hw-expandable">
+					<div class="content-container flex-nah y-center hw-expandable">
+						<span class="sm-text">
+							Shift the spotlight from the game to the stage! Join us for Open Mic
+							Night every Wednesday, a vibrant blend of sports and entertainment.
+							Whether you're a seasoned performer or a first-timer, showcase your
+							talent in stand-up comedy, live music, and more. Enjoy great food,and
+							cheer on local talent. It's a night of unforgettable performances
+							and free drinks for all performers.
+						</span>
+						<a href="reservations.html" class="button">MAKE A RESERVATION</a>
 					</div>
 				</div>
 			</div>
