@@ -9,11 +9,11 @@
 }
 
 :root {
-    --background-primary: #212529;
-    --background-secondary: #343a40;
+    --background-primary: #1f1f27;
+    --background-secondary: #2f2f3b;
     --content: #f1f3f5;
-    --accent: #f03e3e;
-    --accent-secondary: #f76707;
+    --accent: #c92a2a;
+    --accent-secondary: #ee8730;
     --transition: 0.35s;
 }
 
@@ -38,7 +38,10 @@ header {
 
     z-index: 5;
 
-    box-shadow: 0 0 1em var(--background-primary);
+    /* box-shadow: 0 0 1em var(--background-primary); */
+    box-shadow: 0 0 1em #111111;
+
+    max-width: 100vw;
 }
 
 #greeting {
@@ -283,7 +286,74 @@ header {
     transition: var(--transition);
 }
 
+#hamburger-button {
+    display: none;
+
+    height: 100%;
+    padding: 1em 0.5em;
+
+    box-sizing: border-box;
+}
+
+#hamburger-menu {
+    width: 100%;
+    max-width: 100vw;;
+    padding: 1em 2em;
+
+    box-sizing: border-box;
+
+    background-color: #1f1f27;
+
+    /* display: flex; */
+    display: none;
+    flex-direction: column;
+
+    gap: 1em;
+
+    position: fixed;
+    z-index: 5;
+
+    top: 6em;
+}
+
+footer {
+    margin-top: 6em;
+    padding: 2em;
+
+    box-sizing: border-box;
+
+    background-color: var(--accent);
+}
+
+.logo {
+    width: 2em;
+}
+
+.no-link-style * {
+    /* text-decoration: none !important; */
+
+    color: var(--content);
+}
+
+.no-link-style-myself-but-underline {
+    /* text-decoration: none !important; */
+
+    color: var(--content);
+}
+
 @media only screen and (max-width: 70em) {
+    #header-text {
+        font-size: 1.5em;
+    }
+
+    #navbar-buttons {
+        display: none;
+    }
+
+    #hamburger-button {
+        display: block;
+    }
+
     .hw-expandable, .tw-expandable {
         width: 100%;
         max-width: 100%;

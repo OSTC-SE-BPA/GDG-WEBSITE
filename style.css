@@ -428,6 +428,8 @@ header {
     background-color: #1f1f27;
     z-index: 100; /* TODO: please change this */
 
+    box-shadow: 0 0 1em #111111;
+
     user-select: none;
 }
 
