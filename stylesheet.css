@@ -28,6 +28,8 @@ body {
 
     background-color: var(--background-primary);
     color: var(--content);
+
+    overflow-x: hidden;
 }
 
 header {
@@ -196,20 +198,20 @@ header {
 }
 
 .lg-text {
-    font-size: 3.75em;
+    font-size: 4.5em;
 
     /* margin: 0;
     padding: 0; */
 }
 
 .md-text {
-    font-size: 2.5em;
+    font-size: 3em;
 
     vertical-align: middle;
 }
 
 .sm-text {
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 .no-select {
@@ -253,6 +255,8 @@ header {
 
 .card img {
     height: 100%;
+
+    aspect-ratio: 16/9;
 }
 
 .button {
@@ -339,6 +343,10 @@ footer {
     /* text-decoration: none !important; */
 
     color: var(--content);
+}
+
+.top-pad-events {
+    padding-top: 12em;
 }
 
 @media only screen and (max-width: 70em) {

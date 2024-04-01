@@ -3,6 +3,9 @@
     flex-flow: row;
     background-color:  #121215;
     color: white;
+
+    flex-wrap: wrap;
+    /* flex-direction: column-reverse; */
     
 }
 .loc-column { 
@@ -12,6 +15,17 @@
     height: 85vh;
     overflow:hidden;
 }
+
+@media only screen and (max-width: 70em) {
+    .loc-row {
+        flex-direction: column-reverse;
+    }
+
+    .loc-column {
+        width: 100%;
+    }
+}
+
 .button{
     margin: 5px;
 }
